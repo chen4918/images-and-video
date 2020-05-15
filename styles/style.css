@@ -23,10 +23,15 @@ body {
   background: #f8f8f8;
   font-size: 0.8rem;
   color: black;
+  line-height: normal;
 }
 
 span {
   color: #aaa;
+}
+
+h2 {
+  font-size: 1.3rem;
 }
 
 nav {
@@ -87,7 +92,7 @@ nav .options > * {
 }
 
 .btn {
-  border: 2px solid currentColor;
+  border: 2px solid var(--azure);
   padding: 6px 8px;
   border-radius: 3px;
   cursor: pointer;
@@ -105,6 +110,10 @@ nav .sign-in > * {
 
 nav .logo > * {
   margin: 0 2px;
+}
+
+.sign-in span {
+  color: var(--azure);
 }
 
 main {
