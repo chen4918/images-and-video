@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+:root {
+  --nav-height: 60px;
+  --azure: #3ea6ff;
+  --basic-spacing: 10px;
+}
+
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background: #f8f8f8;
+  font-size: 0.8rem;
+  color: black;
+}
+
+span {
+  color: #aaa;
+}
+
+nav {
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0 var(--basic-spacing);
+  font-weight: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo span {
+  color: inherit;
+  font-size: 1.1rem;
+}
+
+nav div, nav form, nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .search-form {
+  flex: 1;
+  margin: 0 auto;
+}
+
+nav .search-form > * {
+  padding: 7px;
+}
+
+.search-form input[type="text"] {
+  width: 55%;
+  border: 1px solid rgba(49, 49, 49, 0.3);
+  border-right: none;
+}
+
+.search-form input[type="submit"] {
+  background: #f8f8f8;
+  color: inherit;
+  width: 50px;
+  border: 1px solid rgba(49, 49, 49, 0.3);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-btn {
+  margin: 0 15px;
+}
+
+nav .options > * {
+  margin: 0 var(--basic-spacing);
+}
+
+.btn {
+  border: 2px solid currentColor;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+nav .sign-in {
+  color: inherit;
+}
+
+nav .sign-in > * {
+  margin: 0 5px;
+}
+
+nav .logo > * {
+  margin: 0 2px;
+}
+
+main {
+  transform: translateY(var(--nav-height));
+  height: 100%;
+  display: flex;
+  padding: 20px 80px;
+}
+
+.primary {
+  flex: 5;
+  margin: 0 20px 0 40px;
+}
+
+.primary > * {
+  width: 100%;
+}
+
+.secondary {
+  flex: 3;
+  margin-right: 40px;
+}
+
+.secondary > *, .primary > * {
+  margin: var(--basic-spacing);
+}
+
+.title-box {
+  margin: var(--basic-spacing);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--basic-spacing) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.video-options {
+  display: flex;
+  align-items: center;
+}
+
+span .label {
+  margin: 0 15px 0 7px;
+  text-transform: uppercase;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  transform: translateY(5px);
+}
+
+.autoplay-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.autoplay-btn-container {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.autoplay-btn {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 35px;
+  height: 15px;
+  margin-left: var(--basic-spacing);
+  align-items: center;
+  position: relative;
+}
+
+.autoplay-btn::after {
+  --diameter: 20px;
+  content: '';
+  display: inline-block;
+  background: var(--azure);
+  border-radius: 50%;
+  height: var(--diameter);
+  width: var(--diameter);
+  position: absolute;
+  left: 100%;
+  transform: translateX(-60%);
+}
+
+.video-thumbnail {
+  display: flex;
+  margin-bottom: var(--basic-spacing);
+}
+
+.video img {
+  display: inline-block;
+  width: 50%;
+}
+
+.video .video-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 var(--basic-spacing);
+}
+
+.video .video-description h3 {
+  font-size: 1.2rem;
+}
+
+span.verified {
+  display: inline-flex;
+  align-items: center;
+}
+
+span.verified::after {
+  content: '';
+  background-image: url('');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.video .video-description span.new {
+  background-color: rgb(51, 51, 51);
+  text-align: center;
+  padding: 3px;
+  font-size: 0.9rem;
+}
+
+.title-box {
+  margin: var(--basic-spacing);
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--basic-spacing) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.video-options {
+    display: flex;
+    align-items: center;
+}
+
+span.label {
+    margin: 0 15px 0 7px;
+    text-transform: uppercase;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    transform: translateY(5px);
+}
+
+.video-info .likes {
+    border-bottom: 2px solid #aaa;
+}
+
+.avatar {
+    --diameter: 40px;
+    height: var(--diameter);
+    width: var(--diameter);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.primary form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.primary form input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 5px 10px;
+}
+
+span.username {
+    color: inherit;
+    font-weight: bold;
+}
+
+.description-box {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: var(--basic-spacing);
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+}
+
+.name-and-subs {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-box .description {
+    margin-top: var(--basic-spacing);
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-box .description span {
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.subscribe {
+    background: red;
+    color: white;
+    border-color: red;
+    margin-left: auto;
+}
+
+.n-comments {
+    display: flex;
+    align-items: center;
+}
+
+.n-comments p {
+    margin-right: 20px;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment-stuff {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-info {
+    margin-bottom: 5px;
+}
+
+.reply {
+    display: flex;
+    align-items: center;
+}
+
+.reply span.label {
+    text-transform: none;
+    color: #3ea6ff;
+}
